@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build / deploy output
+dist/
+build/
+.vercel/
+.cache/
+
+# Environment
+.env
+.env.local
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

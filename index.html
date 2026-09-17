@@ -6,29 +6,37 @@
 <title>Akshay Dighe — Lead Software Developer</title>
 <meta name="description" content="Akshay Dighe — Lead Software Developer with 9+ years building full-stack ReactJS and Node.js applications for global enterprises.">
 <meta name="author" content="Akshay Dighe">
+<meta name="theme-color" content="#0f6f6a">
 <meta property="og:title" content="Akshay Dighe — Lead Software Developer">
 <meta property="og:description" content="Full-stack (ReactJS + Node.js) engineer with 9+ years delivering enterprise web platforms.">
 <meta property="og:type" content="profile">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress"><span id="scrollBar"></span></div>
 
 <nav class="topnav" aria-label="Section navigation">
   <div class="topnav-inner">
-    <a class="brand" href="#top">AD</a>
+    <a class="brand" href="#top" aria-label="Back to top">AD</a>
     <ul class="navlinks">
       <li><a href="#summary">Summary</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#tech">Tech Focus</a></li>
       <li><a href="#education">Education</a></li>
     </ul>
     <div class="nav-actions">
+      <button id="paletteBtn" class="cmd-btn js-only" type="button" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <span>Search</span><kbd>⌘K</kbd>
+      </button>
       <button id="printBtn" class="icon-btn" type="button" title="Print / Save as PDF" aria-label="Print or save as PDF">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V4h12v5M6 18H4v-6h16v6h-2M8 14h8v6H8z"/></svg>
       </button>
@@ -41,25 +49,39 @@
 </nav>
 
 <header id="top" class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
   <div class="hero-inner">
-    <p class="eyebrow">Lead Software Developer</p>
-    <h1>Akshay Dighe</h1>
-    <p class="tagline">Full-Stack Engineering — ReactJS &amp; Node.js — 9+ Years</p>
-    <ul class="contact" aria-label="Contact details">
-      <li><a href="mailto:digheakshay2014@gmail.com">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zM3 6l9 7 9-7"/></svg>
-        digheakshay2014@gmail.com</a></li>
-      <li><a href="tel:+919921437557">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1z"/></svg>
-        +91 99214 37557</a></li>
-      <li><a href="https://github.com/AkshayDigheGithub" target="_blank" rel="noopener noreferrer">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.4-4-2.2-6-2.8m12 5v-3.6a3.1 3.1 0 00-.9-2.4c2.9-.3 6-1.4 6-6.5a5 5 0 00-1.4-3.5 4.7 4.7 0 00-.1-3.5s-1.1-.3-3.6 1.4a12.4 12.4 0 00-6.6 0C6 1.9 4.9 2.2 4.9 2.2a4.7 4.7 0 00-.1 3.5A5 5 0 003.4 9.2c0 5 3.1 6.2 6 6.5a3.1 3.1 0 00-.9 2.4V22"/></svg>
-        github.com/AkshayDigheGithub</a></li>
+    <p class="eyebrow reveal">Lead Software Developer</p>
+    <h1 class="reveal">Akshay Dighe</h1>
+    <p class="tagline reveal">Full-Stack Engineering — ReactJS &amp; Node.js — 9+ Years</p>
+    <ul class="contact reveal" aria-label="Contact details">
+      <li>
+        <a href="mailto:digheakshay2014@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zM3 6l9 7 9-7"/></svg>
+          digheakshay2014@gmail.com</a>
+        <button class="copy-btn js-only" type="button" data-copy="digheakshay2014@gmail.com" data-label="Email" aria-label="Copy email address">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 012-2h10"/></svg>
+        </button>
+      </li>
+      <li>
+        <a href="tel:+919921437557">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1z"/></svg>
+          +91 99214 37557</a>
+        <button class="copy-btn js-only" type="button" data-copy="+919921437557" data-label="Phone number" aria-label="Copy phone number">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 012-2h10"/></svg>
+        </button>
+      </li>
+      <li>
+        <a href="https://github.com/AkshayDigheGithub" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.4-4-2.2-6-2.8m12 5v-3.6a3.1 3.1 0 00-.9-2.4c2.9-.3 6-1.4 6-6.5a5 5 0 00-1.4-3.5 4.7 4.7 0 00-.1-3.5s-1.1-.3-3.6 1.4a12.4 12.4 0 00-6.6 0C6 1.9 4.9 2.2 4.9 2.2a4.7 4.7 0 00-.1 3.5A5 5 0 003.4 9.2c0 5 3.1 6.2 6 6.5a3.1 3.1 0 00-.9 2.4V22"/></svg>
+          github.com/AkshayDigheGithub</a>
+      </li>
     </ul>
-    <div class="stats">
-      <div class="stat"><strong>9+</strong><span>Years experience</span></div>
-      <div class="stat"><strong>6</strong><span>Industries served</span></div>
-      <div class="stat"><strong>4</strong><span>Cloud platforms</span></div>
+    <div class="stats reveal">
+      <div class="stat"><strong data-count="9" data-suffix="+">9+</strong><span>Years experience</span></div>
+      <div class="stat"><strong data-count="6">6</strong><span>Industries served</span></div>
+      <div class="stat"><strong data-count="4">4</strong><span>Cloud platforms</span></div>
+      <div class="stat"><strong data-count="7">7</strong><span>Flagship projects</span></div>
     </div>
   </div>
 </header>
@@ -67,52 +89,53 @@
 <main id="main">
 
 <section id="summary" class="section">
-  <h2><span class="num">01</span>Professional Summary</h2>
-  <p class="lead">Lead Software Developer with 9+ years of experience designing, building and scaling full-stack web
+  <h2 class="reveal"><span class="num">01</span>Professional Summary</h2>
+  <p class="lead reveal">Lead Software Developer with 9+ years of experience designing, building and scaling full-stack web
     applications for global enterprises across industrial automation, building materials, life sciences, retail,
     insurance and fintech. Expert in ReactJS, Node.js, TypeScript and GraphQL, with hands-on cloud delivery on GCP,
     AWS, Azure and Vercel. Leads development teams end to end — architecture, code reviews, mentoring and client
     collaboration — and uses AI-assisted engineering (Claude, Claude Code, GitHub Copilot) to ship faster with
     higher quality.</p>
 
-  <h3 class="sub">Core Strengths</h3>
+  <h3 class="sub reveal">Core Strengths</h3>
   <ul class="strengths">
-    <li>Leading cross-functional teams and owning delivery from requirements to production for international clients.</li>
-    <li>Architecting scalable REST and GraphQL APIs with Node.js, Express and LoopBack over PostgreSQL, MySQL and MongoDB.</li>
-    <li>Building responsive, component-driven React/Next.js applications with Redux and TypeScript.</li>
-    <li>Deploying and operating applications on Google Cloud Platform, AWS, Azure DevOps and Vercel.</li>
-    <li>Integrating AI tools and LLM platforms (Claude Platform, Claude Code, GitHub Copilot) into development workflows and products.</li>
+    <li class="reveal">Leading cross-functional teams and owning delivery from requirements to production for international clients.</li>
+    <li class="reveal">Architecting scalable REST and GraphQL APIs with Node.js, Express and LoopBack over PostgreSQL, MySQL and MongoDB.</li>
+    <li class="reveal">Building responsive, component-driven React/Next.js applications with Redux and TypeScript.</li>
+    <li class="reveal">Deploying and operating applications on Google Cloud Platform, AWS, Azure DevOps and Vercel.</li>
+    <li class="reveal">Integrating AI tools and LLM platforms (Claude Platform, Claude Code, GitHub Copilot) into development workflows and products.</li>
   </ul>
 </section>
 
 <section id="skills" class="section">
-  <h2><span class="num">02</span>Technical Skills</h2>
+  <h2 class="reveal"><span class="num">02</span>Technical Skills</h2>
+  <p class="hint js-only reveal">Select any skill to filter the project list below.</p>
   <div class="skillgrid">
-    <div class="skillcard">
+    <div class="skillcard reveal">
       <h3>Frontend</h3>
-      <ul class="tags"><li>ReactJS</li><li>Next.js</li><li>Redux</li><li>Redux Thunk</li><li>TypeScript</li><li>JavaScript (ES6+)</li><li>HTML5</li><li>CSS3</li><li>Bootstrap</li></ul>
+      <ul class="tags" data-filterable><li>ReactJS</li><li>Next.js</li><li>Redux</li><li>Redux Thunk</li><li>TypeScript</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>Bootstrap</li></ul>
     </div>
-    <div class="skillcard">
+    <div class="skillcard reveal">
       <h3>Backend &amp; APIs</h3>
-      <ul class="tags"><li>Node.js</li><li>Express.js</li><li>LoopBack</li><li>GraphQL</li><li>REST APIs</li><li>JSON</li></ul>
+      <ul class="tags" data-filterable><li>Node.js</li><li>Express.js</li><li>LoopBack</li><li>GraphQL</li><li>REST APIs</li><li>JSON</li></ul>
     </div>
-    <div class="skillcard">
+    <div class="skillcard reveal">
       <h3>Databases</h3>
-      <ul class="tags"><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li></ul>
+      <ul class="tags" data-filterable><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li></ul>
     </div>
-    <div class="skillcard">
+    <div class="skillcard reveal">
       <h3>Cloud &amp; DevOps</h3>
-      <ul class="tags"><li>Google Cloud Platform</li><li>AWS (EC2, RDS)</li><li>Azure DevOps</li><li>Vercel</li><li>CI/CD</li><li>DNS &amp; Domain Management</li></ul>
+      <ul class="tags" data-filterable><li>GCP</li><li>AWS EC2</li><li>RDS</li><li>Azure DevOps</li><li>Vercel</li><li>CI/CD</li><li>DNS &amp; Domain Management</li></ul>
     </div>
-    <div class="skillcard">
+    <div class="skillcard reveal">
       <h3>AI &amp; Productivity</h3>
-      <ul class="tags"><li>Claude (Anthropic)</li><li>Claude Platform / API</li><li>Claude Code</li><li>GitHub Copilot</li><li>AI-assisted code review</li></ul>
+      <ul class="tags" data-filterable><li>Claude</li><li>Claude Platform</li><li>Claude Code</li><li>GitHub Copilot</li><li>AI-assisted code review</li></ul>
     </div>
-    <div class="skillcard">
+    <div class="skillcard reveal">
       <h3>Tools &amp; Testing</h3>
-      <ul class="tags"><li>Git</li><li>GitHub</li><li>Bitbucket</li><li>Jira</li><li>Jest</li><li>PDFMake</li><li>MySQL Workbench</li><li>Robo 3T</li><li>pgAdmin 4</li></ul>
+      <ul class="tags" data-filterable><li>Git</li><li>GitHub</li><li>Bitbucket</li><li>Jira</li><li>Jest</li><li>PDFMake</li><li>MySQL Workbench</li><li>Robo 3T</li><li>pgAdmin 4</li></ul>
     </div>
-    <div class="skillcard">
+    <div class="skillcard reveal">
       <h3>Leadership</h3>
       <ul class="tags"><li>Team Leadership</li><li>Code Reviews</li><li>Mentoring</li><li>Agile / Scrum</li><li>Sprint Planning</li><li>Client Communication</li></ul>
     </div>
@@ -120,9 +143,9 @@
 </section>
 
 <section id="experience" class="section">
-  <h2><span class="num">03</span>Professional Experience</h2>
+  <h2 class="reveal"><span class="num">03</span>Professional Experience</h2>
   <ol class="timeline">
-    <li class="tl-item current">
+    <li class="tl-item current reveal" data-employer="softdel">
       <div class="tl-head">
         <h3>Lead Software Developer</h3>
         <span class="period">Feb 2023 – Present</span>
@@ -134,8 +157,12 @@
         <li>Drive architecture decisions, code reviews and engineering best practices; mentor developers.</li>
         <li>Introduced AI-assisted development with Claude Code and GitHub Copilot to speed up coding, testing and documentation.</li>
       </ul>
+      <button class="link-btn js-only" type="button" data-show-employer="softdel">
+        View 3 related projects
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
     </li>
-    <li class="tl-item">
+    <li class="tl-item reveal" data-employer="cyncly">
       <div class="tl-head">
         <h3>Senior Software Developer</h3>
         <span class="period">Mar 2022 – Feb 2023</span>
@@ -144,8 +171,12 @@
       <ul class="bullets">
         <li>Built core modules and 3D planner features for the IKEA Global Office Planner used across international markets.</li>
       </ul>
+      <button class="link-btn js-only" type="button" data-show-employer="cyncly">
+        View 1 related project
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
     </li>
-    <li class="tl-item">
+    <li class="tl-item reveal" data-employer="rapidera">
       <div class="tl-head">
         <h3>Full Stack Developer</h3>
         <span class="period">Jul 2018 – Feb 2022</span>
@@ -154,8 +185,12 @@
       <ul class="bullets">
         <li>Delivered React and Node.js solutions for HDFC Life, Tavaga and IDWallet, including APIs, integrations and AWS deployments.</li>
       </ul>
+      <button class="link-btn js-only" type="button" data-show-employer="rapidera">
+        View 3 related projects
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
     </li>
-    <li class="tl-item">
+    <li class="tl-item reveal" data-employer="softains">
       <div class="tl-head">
         <h3>Application Developer</h3>
         <span class="period">Jun 2017 – Jun 2018</span>
@@ -169,10 +204,26 @@
 </section>
 
 <section id="projects" class="section">
-  <h2><span class="num">04</span>Key Projects</h2>
-  <div class="projects">
+  <h2 class="reveal"><span class="num">04</span>Key Projects</h2>
 
-    <article class="project">
+  <div class="toolbar js-only reveal" role="search">
+    <div class="searchbox">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="projectSearch" type="search" placeholder="Search projects, domains or technologies…"
+             aria-label="Search projects" autocomplete="off">
+      <kbd>/</kbd>
+    </div>
+    <div id="filterChips" class="chips" role="group" aria-label="Filter projects by technology"></div>
+    <div class="toolbar-meta">
+      <p id="filterStatus" class="filter-status" role="status" aria-live="polite"></p>
+      <button id="clearFilters" class="link-btn" type="button" hidden>Clear filters</button>
+    </div>
+  </div>
+
+  <div class="projects" id="projectList">
+
+    <article class="project reveal" data-employer="softdel"
+             data-tech="ReactJS,TypeScript,Node.js,GraphQL,PostgreSQL,GCP,Claude,GitHub Copilot">
       <header>
         <h3>Building &amp; Industrial Automation</h3>
         <span class="badge badge-conf">Client confidential</span>
@@ -185,7 +236,8 @@
       <ul class="tags tech"><li>ReactJS</li><li>TypeScript</li><li>Node.js</li><li>GraphQL</li><li>PostgreSQL</li><li>GCP</li><li>Claude</li><li>GitHub Copilot</li></ul>
     </article>
 
-    <article class="project">
+    <article class="project reveal" data-employer="softdel"
+             data-tech="ReactJS,Next.js,TypeScript,Node.js,Vercel,GCP,Claude Platform,GitHub Copilot">
       <header>
         <h3>Building Materials</h3>
         <span class="badge badge-conf">Client confidential</span>
@@ -198,7 +250,8 @@
       <ul class="tags tech"><li>ReactJS</li><li>Next.js</li><li>TypeScript</li><li>Node.js</li><li>Vercel</li><li>GCP</li><li>Claude Platform</li><li>GitHub Copilot</li></ul>
     </article>
 
-    <article class="project">
+    <article class="project reveal" data-employer="softdel"
+             data-tech="JavaScript,TypeScript,ReactJS,Node.js,GraphQL,PostgreSQL,AWS EC2">
       <header>
         <h3>Life Sciences / Lab Automation</h3>
         <span class="badge badge-conf">Client confidential</span>
@@ -207,10 +260,11 @@
         <li>Built new features and optimized performance for an open-source liquid-handling robot's lab automation interface.</li>
         <li>Troubleshot and fixed bugs, conducted code reviews, and contributed to testing, documentation and community support.</li>
       </ul>
-      <ul class="tags tech"><li>JavaScript</li><li>TypeScript</li><li>ReactJS</li><li>Node.js</li><li>GraphQL</li><li>PostgreSQL</li><li>AWS</li></ul>
+      <ul class="tags tech"><li>JavaScript</li><li>TypeScript</li><li>ReactJS</li><li>Node.js</li><li>GraphQL</li><li>PostgreSQL</li><li>AWS EC2</li></ul>
     </article>
 
-    <article class="project">
+    <article class="project reveal" data-employer="cyncly"
+             data-tech="JavaScript,TypeScript,ReactJS,Azure DevOps,Jira">
       <header>
         <h3>IKEA Global — Office Planner Tool</h3>
         <span class="badge">Retail / 3D Planning</span>
@@ -222,7 +276,8 @@
       <ul class="tags tech"><li>JavaScript</li><li>TypeScript</li><li>ReactJS</li><li>Azure DevOps</li><li>Jira</li></ul>
     </article>
 
-    <article class="project">
+    <article class="project reveal" data-employer="rapidera"
+             data-tech="JavaScript,ReactJS,Redux,React Router,Node.js,Express.js,MongoDB">
       <header>
         <h3>HDFC Life (ADCAT)</h3>
         <span class="badge">Insurance</span>
@@ -234,7 +289,8 @@
       <ul class="tags tech"><li>JavaScript</li><li>ReactJS</li><li>Redux</li><li>React Router</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li></ul>
     </article>
 
-    <article class="project">
+    <article class="project reveal" data-employer="rapidera"
+             data-tech="Node.js,LoopBack,MySQL,Firebase,AWS EC2,RDS">
       <header>
         <h3>Tavaga</h3>
         <span class="badge">Fintech / Robo-Advisory</span>
@@ -246,7 +302,8 @@
       <ul class="tags tech"><li>Node.js</li><li>LoopBack</li><li>MySQL</li><li>Firebase</li><li>AWS EC2</li><li>RDS</li></ul>
     </article>
 
-    <article class="project">
+    <article class="project reveal" data-employer="rapidera"
+             data-tech="ReactJS,Redux,Node.js,Express.js,MongoDB,Jest,AWS EC2,RDS">
       <header>
         <h3>IDWallet</h3>
         <span class="badge">Digital KYC &amp; Onboarding</span>
@@ -259,20 +316,45 @@
     </article>
 
   </div>
+
+  <p id="emptyState" class="empty-state" hidden>
+    No projects match that filter.
+    <button class="link-btn" type="button" data-clear>Reset</button>
+  </p>
+</section>
+
+<section id="tech" class="section js-only">
+  <h2 class="reveal"><span class="num">05</span>Technology Focus</h2>
+  <p class="lead reveal">How often each technology appears across the seven flagship projects listed above.
+    Hover or focus a bar to see which projects use it; select one to filter the list.</p>
+  <figure class="chart reveal" id="techChart">
+    <figcaption class="chart-caption">Projects using each technology — of 7 total</figcaption>
+    <div class="bars" id="techBars"></div>
+  </figure>
+  <details class="datatable reveal">
+    <summary>View as table</summary>
+    <div class="table-wrap">
+      <table id="techTable">
+        <caption class="sr-only">Number of projects using each technology</caption>
+        <thead><tr><th scope="col">Technology</th><th scope="col">Projects</th><th scope="col">Where</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </details>
 </section>
 
 <section id="education" class="section">
-  <h2><span class="num">05</span>Education &amp; Languages</h2>
+  <h2 class="reveal"><span class="num">06</span>Education &amp; Languages</h2>
   <div class="twocol">
     <div>
-      <h3 class="sub">Education</h3>
+      <h3 class="sub reveal">Education</h3>
       <ul class="edu">
-        <li>
+        <li class="reveal">
           <strong>Bachelor of Engineering — Computer Engineering</strong>
           <span>Savitribai Phule Pune University</span>
           <span class="period">2016</span>
         </li>
-        <li>
+        <li class="reveal">
           <strong>Diploma — Information Technology</strong>
           <span>Maharashtra State Board of Technical Education</span>
           <span class="period">2013</span>
@@ -280,8 +362,8 @@
       </ul>
     </div>
     <div>
-      <h3 class="sub">Languages</h3>
-      <ul class="tags"><li>English</li><li>Hindi</li><li>Marathi</li></ul>
+      <h3 class="sub reveal">Languages</h3>
+      <ul class="tags reveal"><li>English</li><li>Hindi</li><li>Marathi</li></ul>
     </div>
   </div>
 </section>
@@ -292,6 +374,30 @@
   <p>Akshay Dighe — Lead Software Developer</p>
   <p class="muted">Client names for current engagements are withheld; industry sectors are shown instead.</p>
 </footer>
+
+<button id="toTop" class="to-top js-only" type="button" aria-label="Back to top" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<dialog id="palette" class="palette" aria-label="Command palette">
+  <div class="palette-input">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    <input id="paletteInput" type="text" placeholder="Jump to a section, or run a command…"
+           aria-label="Search commands" autocomplete="off" role="combobox"
+           aria-expanded="true" aria-controls="paletteList">
+    <kbd>Esc</kbd>
+  </div>
+  <ul id="paletteList" class="palette-list" role="listbox" aria-label="Commands"></ul>
+  <p class="palette-foot">
+    <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+    <span><kbd>↵</kbd> select</span>
+    <span><kbd>/</kbd> search projects</span>
+  </p>
+</dialog>
+
+<div id="tooltip" class="chart-tooltip" role="tooltip" hidden></div>
 
 <script src="assets/script.js"></script>
 </body>
